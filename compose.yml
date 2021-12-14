@@ -1,0 +1,11 @@
+version: '2'
+services:
+  kanboard:
+    image: kanboard/kanboard:latest
+    ports:
+      - "31080:80"
+      - "31443:443"
+    volumes:
+      - /pool/kanboard_data:/var/www/app/data
+      - /pool/kanboard_plugins:/var/www/app/plugins
+      - /pool/kanboard_ssl:/etc/nginx/ssl
