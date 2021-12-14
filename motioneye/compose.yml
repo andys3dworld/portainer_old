@@ -1,0 +1,11 @@
+---
+version: "3.5"
+services:
+  motioneye:
+    image: ccrisan/motioneye:master-amd64  # Change to ccrisan/motioneye:master-armhf for ARM chips (Pi etc.)
+    ports:
+      - "8081:8081"
+      - "8765:8765"
+    volumes:
+      - /pool/motioneye_etc:/etc/motioneye
+      - /pool/motioneye_var_lib:/var/lib/motioneye
