@@ -10,7 +10,7 @@ services:
       DB_MYSQL_HOST: "db"
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: "npm"
-      DB_MYSQL_PASSWORD: "76PRPkoDeSsJ2ft6"
+      DB_MYSQL_PASSWORD: "pass"
       DB_MYSQL_NAME: "npm"
     volumes:
       - /pool/nginxproxymanager_data:/data
@@ -21,6 +21,6 @@ services:
       MYSQL_ROOT_PASSWORD: 'npm'
       MYSQL_DATABASE: 'npm'
       MYSQL_USER: 'npm'
-      MYSQL_PASSWORD: '76PRPkoDeSsJ2ft6'
+      MYSQL_PASSWORD: 'pass'
     volumes:
       - /pool/nginxproxymanager_data/mysql:/var/lib/mysql
