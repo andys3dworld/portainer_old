@@ -16,6 +16,7 @@ services:
       - DEFAULT_WORKSPACE=/config/workspace #optional
     volumes:
       - /virt/code-server/config:/config
+      - /virt/grav/config/www/user/pages:/config/workspace/grav
     ports:
       - 8443:8443
     restart: unless-stopped
